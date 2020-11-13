@@ -32,7 +32,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 Vue.use(VueRouter)
-const router = new Vue.router({
+const router = new VueRouter({
     mode: 'history',
     base: process.env.BASE_URL,
     routes

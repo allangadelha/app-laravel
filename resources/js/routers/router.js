@@ -1,6 +1,6 @@
 import Home from '../view/Home.vue'
 import Hello from '../view/Hello.vue'
-import Example from '../view/Example.vue '
+import Example from '../view/Example.vue'
 
 const routes = [
     {
@@ -18,4 +18,6 @@ const routes = [
         name: 'example',
         component: Example
     }
-]
+];
+
+export default routes
