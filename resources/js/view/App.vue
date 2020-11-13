@@ -1,11 +1,19 @@
 <template>
     <div>
-        <router-link :to="{ name: 'home' }">Home</router-link>
-        <router-link :to="{ name: 'hello' }">Hello</router-link>
-        <router-link :to="{ name: 'example' }">Example</router-link>
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">SPA - laravel com Vue JS</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><router-link :to="{ name: 'home' }">Home</router-link></li>
+                    <li><router-link :to="{ name: 'hello' }">Hello</router-link></li>
+                    <li><router-link :to="{ name: 'example' }">Example</router-link></li>
+                </ul>
+            </div>
+        </nav>
 
         <div class="container">
-            <p>Laravel SPA com Vue JS</p>
+            <div class="card"></div>
             <router-view></router-view>
         </div>
     </div>
